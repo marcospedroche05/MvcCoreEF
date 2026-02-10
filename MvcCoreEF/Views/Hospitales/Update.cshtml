@@ -1,0 +1,17 @@
+﻿@model Hospital
+
+<h1>Editar hospital</h1>
+
+<form method="post">
+    <label>Id hospital: </label>
+    <input class="form-control" name="idHospital" type="text" value="@Model.IdHospital" readonly/><br />
+    <label>Nombre: </label>
+    <input class="form-control" name="nombre" type="text" value="@Model.Nombre"/><br />
+    <label>Direccion: </label>
+    <input class="form-control" name="direccion" type="text" value="@Model.Direccion"/><br />
+    <label>Telefono: </label>
+    <input class="form-control" name="telefono" type="text" value="@Model.Telefono"/><br />
+    <label>Nº de camas: </label>
+    <input class="form-control" name="camas" type="text" value="@Model.Camas"/><br />
+    <button class="btn btn-warning">Editar</button>
+</form>
